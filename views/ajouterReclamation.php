@@ -4,8 +4,10 @@ include "../core/ReclamationC.php";
 require_once '../lib/phpmailer/PHPMailerAutoLoad.php';
 
 if (isset($_POST['subject']) and isset($_POST['message'])){
+    $date= date_create()->format('Y-m-d');
+
     $a=$_POST['user'];
-    $reclamation1=new Reclamation($_POST['subject'],$_POST['message'],"en attente",$a);
+    $reclamation1=new Reclamation($date,$_POST['subject'],$_POST['message'],"en attente",$a);
     $reclamationC=new ReclamationC();
     $reclamationC->ajouterReclamation($reclamation1);
 
@@ -47,9 +49,13 @@ if (isset($_POST['subject']) and isset($_POST['message'])){
             echo "Message has been sent successfully";
         }
     }
-    header('Location:contact.php');
+    //header('Location:contact.php');
+    echo "<script type=\"text/javascript\">window.alert('Reclamation ajoutée Verifiez votre mail.');
+                window.location.href='contact.php'</script>";
 }else{
-    echo "vérifier les champs";
+
+    echo "<script type=\"text/javascript\">window.alert('Verifiez vos champs.');
+                window.location.href='contact.php'</script>";
 
 }
 

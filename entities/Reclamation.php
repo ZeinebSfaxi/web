@@ -1,20 +1,37 @@
 <?PHP
 class Reclamation{
 
-	private $ID_R;
+    private $NOW_R;
+    private $ID_R;
 	private $OBJET_R;
 	private $DETAILS_R;
 	private $ETAT;
     private $USER_ID;
 
-	function __construct($OBJET_R, $DETAILS_R, $ETAT,$USER_ID){
 
+	function __construct($NOW_R,$OBJET_R, $DETAILS_R, $ETAT,$USER_ID){
+
+        $this->NOW_R=$NOW_R;
 	    $this->OBJET_R=$OBJET_R;
 		$this->DETAILS_R=$DETAILS_R;
 		$this->ETAT=$ETAT;
 		$this->USER_ID=$USER_ID;
 
+
 	}
+
+
+    public function getNOW_R()
+    {
+        return $this->NOW_R;
+    }
+
+
+    public function setNOW_R($NOW_R)
+    {
+        $this->NOW_R = $NOW_R;
+    }
+
 	
 	public function getUSER_ID(){
 		return $this->USER_ID;

@@ -4,7 +4,7 @@ class RdvC {
 
     function afficherRDV ($a)
     {
-        $sql="SELECT * FROM rdv WHERE USER_ID=$a";
+        $sql="SELECT * FROM rdv WHERE USER_ID=$a ORDER BY NOW_RDV DESC";
         $db=config::getConnexion();
         $list=$db->query($sql);
         return $list;
@@ -13,17 +13,18 @@ class RdvC {
 
     function ajouterRDV($Rdv)
     {
-        $sql="INSERT INTO rdv (DATE_RDV,OBJET_RDV,ETAT_RDV,USER_ID) VALUES (:DATEtime,:OBJET_RDV,:ETAT_RDV,:USER_ID)";
+        $sql="INSERT INTO rdv (NOW_RDV,DATE_RDV,OBJET_RDV,ETAT_RDV,USER_ID) VALUES (:NOW_RDV,:DATEtime,:OBJET_RDV,:ETAT_RDV,:USER_ID)";
         $db = config::getConnexion();
         try{
             $req=$db->prepare($sql);
 
-
+            $NOW_RDV=$Rdv->getNOW_RDV();
             $Date=$Rdv->getDATE_RDV();
             $OBJET_RDV=$Rdv->getOBJET_RDV();
             $ETAT_RDV=$Rdv->getETAT_RDV();
             $USER_ID=$Rdv->getUSER_ID();
 
+            $req->bindValue(':NOW_RDV',$NOW_RDV);
             $req->bindValue(':DATEtime',$Date);
             $req->bindValue(':OBJET_RDV',$OBJET_RDV);
             $req->bindValue(':ETAT_RDV',$ETAT_RDV);
@@ -40,7 +41,7 @@ class RdvC {
     function afficherRDVs()
     {
         //$sql="SElECT * From rdv s inner join utilisateur u on s.USER_ID= u.USER_ID";
-        $sql="SElECT d.ID_RDV,d.DATE_RDV,d.OBJET_RDV,d.ETAT_RDV,u.NOM_U,u.PRENOM_U FROM rdv d INNER JOIN utilisateur u ON u.USER_ID=d.USER_ID";
+        $sql="SElECT d.ID_RDV,d.NOW_RDV,d.DATE_RDV,d.OBJET_RDV,d.ETAT_RDV,u.NOM_U,u.PRENOM_U FROM rdv d INNER JOIN utilisateur u ON u.USER_ID=d.USER_ID";
         $db = config::getConnexion();
         try{
             $liste=$db->query($sql);
@@ -111,7 +112,7 @@ class RdvC {
         }
     }
 
-}
+
 
 
 function modifierRDV($Rdv,$ID_RDV)
@@ -130,7 +131,86 @@ function modifierRDV($Rdv,$ID_RDV)
      $req->execute();
 
 }
+function RechercheRDV($haja){
+
+    $sql="SELECT d.ID_RDV,d.NOW_RDV,d.DATE_RDV,d.OBJET_RDV,d.ETAT_RDV,u.NOM_U,u.PRENOM_U FROM rdv d INNER JOIN utilisateur u ON u.USER_ID=d.USER_ID WHERE u.NOM_U LIKE '%$haja%' ORDER BY DATE_RDV DESC";
 
 
+    $db = config::getConnexion();
+    try{
+        $liste=$db->query($sql);
+        return $liste;
 
+    }
+    catch (Exception $e){
+        die('Erreur: '.$e->getMessage());
+    }
+}
+
+function NBRRESU(){
+
+    $sql="SELECT COUNT(ID_RDV) nbr FROM rdv WHERE OBJET_RDV='Livraison non reçu' ";
+
+
+    $db = config::getConnexion();
+    try{
+        $liste=$db->query($sql);
+        return $liste;
+
+    }
+    catch (Exception $e){
+        die('Erreur: '.$e->getMessage());
+    }
+}
+
+function NBRNONC(){
+
+    $sql="SELECT COUNT(ID_RDV) nbr FROM rdv WHERE OBJET_RDV='Livraison non coforme' ";
+
+
+    $db = config::getConnexion();
+    try{
+        $liste=$db->query($sql);
+        return $liste;
+
+    }
+    catch (Exception $e){
+        die('Erreur: '.$e->getMessage());
+    }
+}
+
+function NBRREP(){
+
+    $sql="SELECT COUNT(ID_RDV) nbr FROM rdv WHERE OBJET_RDV='Réparation et maintenance sous garantie' ";
+
+
+    $db = config::getConnexion();
+    try{
+        $liste=$db->query($sql);
+        return $liste;
+
+    }
+    catch (Exception $e){
+        die('Erreur: '.$e->getMessage());
+    }
+}
+
+function NBRAUTRE(){
+
+    $sql="SELECT COUNT(ID_RDV) nbr FROM rdv WHERE OBJET_RDV='Autre..' ";
+
+
+    $db = config::getConnexion();
+    try{
+        $liste=$db->query($sql);
+        return $liste;
+
+    }
+    catch (Exception $e){
+        die('Erreur: '.$e->getMessage());
+    }
+}
+
+
+}
 ?>

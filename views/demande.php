@@ -7,6 +7,22 @@ $list=$demandec->afficherDemande($_SESSION['id']);
 <!DOCTYPE HTML>
 <html>
 <head>
+
+   <!-- <script type="text/javascript">
+        function valider()
+        {
+            if(formular.message.length != 8)
+            {
+                alert("verifiez telephone");
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+
+    </script>-->
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Shop &mdash; Free Website Template, Free HTML5 Template by gettemplates.co</title>
@@ -158,7 +174,7 @@ $list=$demandec->afficherDemande($_SESSION['id']);
 				</div>
 				<div class="col-md-6 animate-box">
 					<h3>Déposez vos demandes</h3>
-					<form method="post" action="http://localhost/projet - Copie/views/ajouterDemande.php">
+					<form method="post" name="formular" action="http://localhost/projet - Copie/views/ajouterDemande.php">
                         <input type="hidden" id="user" name="user" value="<?php echo$_SESSION['id'];?>">
 						<div class="row form-group">
 							<div class="col-md-6">
@@ -170,7 +186,7 @@ $list=$demandec->afficherDemande($_SESSION['id']);
 						<div class="row form-group">
 							<div class="col-md-12">
 								<label for="num">Numero:</label>
-                                <input type="number" id="num" name="num" class="form-control" min="10000000" max="99999999" required  placeholder="Votre numéro: +216">
+                                <input type="number" id="num" name="num" class="form-control"  min="10000000" max="99999999" required  placeholder="Votre numéro: +216">
 							</div>
 						</div>
 
@@ -191,7 +207,7 @@ $list=$demandec->afficherDemande($_SESSION['id']);
 							</div>
 						</div>
 
-						<input type="submit" id ="envoyer" name="envoyer" class="btn btn-primary" value="envoyer"/>
+						<input type="submit" id ="envoyer" name="envoyer" class="btn btn-primary" value="envoyer" />
 
 
 					</form>
@@ -204,10 +220,15 @@ $list=$demandec->afficherDemande($_SESSION['id']);
 
 
 	<div id="fh5co-started">
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2">
-					<table class="table-bordered">
+        <div class="row animate-box" style="  margin: auto; padding: 10px;" >
+            <div class="row" >
+                <div class="span12">
+                    <div class="well well-small" style="margin-left:10% ; width:1200px">
+                        <h1>Liste de Vos Demandes<small class="pull-right"></small></h1>
+                        <hr class="soften"/>
+                        <h6> Notez Bien que la modification et la suppression seront impossible apres 24h <small class="pull-right"></small></h6>
+
+					<table class="table table-striped">
                         <thead>
                         <th>Date de la demande</th>
                         <th>Nom de la societe</th>
@@ -240,8 +261,13 @@ $list=$demandec->afficherDemande($_SESSION['id']);
                                 </td>
                             </div>
                         </div>
-                                <td> <button name="modifier" class="btn-outline" value="Modifier">
-                                    <a href="modifierdemande.php?mod=<?php echo $row['ID_D'];?>">M</a>Modifier</button>
+                                <td>
+
+                                    <form method="GET" action="modifierdemande.php" >
+                                        <input type="submit" name="modifier" class="btn-outline" value="Modifier"/>
+
+                                        <input type="hidden" name="mod" value="<?php echo $row['ID_D'];?>"/>
+                                    </form>
                                 </td>
 
                         <?php
@@ -253,6 +279,7 @@ $list=$demandec->afficherDemande($_SESSION['id']);
 			</div>
 		</div>
 	</div>
+
 
 	<footer id="fh5co-footer" role="contentinfo">
 		<div class="container">

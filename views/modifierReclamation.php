@@ -1,16 +1,27 @@
 <?php
 session_start();
 include '../core/ReclamationC.php';
+$dd= date_create()->format('Y-m-d');
 $db=config::getConnexion();
 $id=$_GET['mod'];
 $req="SELECT * FROM reclamation WHERE ID_R='$id'";
 $list=$db->query($req);
 foreach ($list as $row)
 {
-    $id=$row['ID_R'];
-    $objet=$row['OBJET_R'];
-    $details=$row['DETAILS_R'];
-    $etat=$row['ETAT'];
+if ($dd <= $row['NOW_R']) {
+    $id = $row['ID_R'];
+    $date = $row['NOW_R'];
+    $objet = $row['OBJET_R'];
+    $details = $row['DETAILS_R'];
+    $etat = $row['ETAT'];
+}
+else
+{
+
+    echo "<script type=\"text/javascript\">window.alert('Vous ne pouvez plus modifier.');
+                window.location.href='contact.php'</script>";
+
+}
 }
 ?>
 <!DOCTYPE HTML>

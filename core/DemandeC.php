@@ -5,7 +5,7 @@ class DemandeC
 
     function afficherDemande($a)
     {
-        $sql = "SELECT * FROM demande WHERE user_id=$a";
+        $sql = "SELECT * FROM demande WHERE user_id=$a ORDER BY DATE_DEMANDE DESC ";
         $db = config::getConnexion();
         $list = $db->query($sql);
         return $list;
@@ -46,7 +46,7 @@ class DemandeC
     function afficherDemandes()
     {
         //$sql="SElECT * From demande d inner join utilisateur u on d.USER_ID= u.USER_ID";
-        $sql = "SElECT d.ID_D,d.DATE_DEMANDE,d.NOM_D,d.NUM_D,d.OBJET_D,d.DETAILS_D,d.ETAT_D,u.NOM_U,u.PRENOM_U FROM demande d INNER JOIN utilisateur u ON u.USER_ID=d.user_id";
+        $sql = "SElECT d.ID_D,d.DATE_DEMANDE,d.NOM_D,d.NUM_D,d.OBJET_D,d.DETAILS_D,d.ETAT_D,u.NOM_U,u.PRENOM_U FROM demande d INNER JOIN utilisateur u ON u.USER_ID=d.user_id ORDER BY DATE_DEMANDE DESC";
         $db = config::getConnexion();
         try {
             $liste = $db->query($sql);
@@ -59,18 +59,26 @@ class DemandeC
 
     function supprimerDemande($ID_D)
     {
-        $sql = "DELETE FROM demande where ID_D= :ID_D";
-        $db = config::getConnexion();
-        $req = $db->prepare($sql);
+        //$date= date_create()->format('Y-m-d');
 
-        $req->bindValue(':ID_D', $ID_D);
-        try {
-            $req->execute();
-            // header('Location: ../views/Demande.php');
+        //$d ="SELECT DATE_DEMANDE FROM demande WHERE ID_D = :ID_D ";
+        //$bd = config::getConnexion();
 
-        } catch (Exception $e) {
-            die('Erreur: ' . $e->getMessage());
-        }
+            $sql = "DELETE FROM demande where ID_D= :ID_D";
+            $db = config::getConnexion();
+            $req = $db->prepare($sql);
+
+            $req->bindValue(':ID_D', $ID_D);
+            try {
+                $req->execute();
+                // header('Location: ../views/Demande.php');
+
+            } catch (Exception $e) {
+                die('Erreur: ' . $e->getMessage());
+            }
+
+           // echo "<script type=\"text/javascript\">window.alert('Vous ne pouvez plus supprimer.')</script>";
+
     }
 
     function traiterD($ID_D)
@@ -122,6 +130,55 @@ class DemandeC
         $req->execute();
 
     }
+
+    function RechercheDemande($haja){
+
+        $sql="SELECT d.ID_D,d.DATE_DEMANDE,d.NOM_D,d.NUM_D,d.OBJET_D,d.DETAILS_D,d.ETAT_D,u.NOM_U,u.PRENOM_U FROM demande d INNER JOIN utilisateur u ON u.USER_ID=d.user_id WHERE DATE_DEMANDE LIKE '%$haja%' OR u.NOM_U LIKE '%$haja%' ORDER BY DATE_DEMANDE DESC";
+
+
+        $db = config::getConnexion();
+        try{
+            $liste=$db->query($sql);
+            return $liste;
+
+        }
+        catch (Exception $e){
+            die('Erreur: '.$e->getMessage());
+        }
+    }
+
+    function NBRPART(){
+
+        $sql="SELECT COUNT(ID_D) nbr FROM demande WHERE OBJET_D='partenariat' ";
+
+
+        $db = config::getConnexion();
+        try{
+            $liste=$db->query($sql);
+            return $liste;
+
+        }
+        catch (Exception $e){
+            die('Erreur: '.$e->getMessage());
+        }
+    }
+
+    function NBRSPON(){
+
+        $sql="SELECT COUNT(ID_D) nbr FROM demande WHERE OBJET_D='sponsoring' ";
+
+
+        $db = config::getConnexion();
+        try{
+            $liste=$db->query($sql);
+            return $liste;
+
+        }
+        catch (Exception $e){
+            die('Erreur: '.$e->getMessage());
+        }
+    }
+
 }
 
 ?>

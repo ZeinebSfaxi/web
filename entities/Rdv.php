@@ -1,19 +1,32 @@
 <?PHP
 class Rdv{
     private $ID_RDV;
+    private $NOW_RDV;
     private $DATE_RDV;
     private $OBJET_RDV;
     private $ETAT_RDV;
     private $USER_ID;
 
 
-    function __construct($DATE_RDV, $OBJET_RDV, $ETAT_RDV,$USER_ID){
+    function __construct($NOW_RDV,$DATE_RDV, $OBJET_RDV, $ETAT_RDV,$USER_ID){
 
+        $this->NOW_RDV=$NOW_RDV;
         $this->DATE_RDV=$DATE_RDV;
         $this->OBJET_RDV=$OBJET_RDV;
         $this->ETAT_RDV=$ETAT_RDV;
         $this->USER_ID=$USER_ID;
 
+    }
+
+
+    public function getNOW_RDV()
+    {
+        return $this->NOW_RDV;
+    }
+
+    public function setNOW_RDV($NOW_RDV)
+    {
+        $this->NOW_RDV = $NOW_RDV;
     }
 
     public function getUSER_ID(){

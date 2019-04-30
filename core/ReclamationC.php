@@ -4,7 +4,7 @@ class ReclamationC {
 
     function afficherReclamation ($a)
     {
-        $sql="SELECT * FROM reclamation WHERE USER_ID=$a";
+        $sql="SELECT * FROM reclamation WHERE USER_ID=$a ORDER BY NOW_R DESC";
         $db=config::getConnexion();
         $list=$db->query($sql);
         return $list;
@@ -13,7 +13,7 @@ class ReclamationC {
 
     function ajouterReclamation($Reclamation)
     {
-        $sql="INSERT INTO reclamation (OBJET_R,DETAILS_R,ETAT,USER_ID) VALUES (:OBJET_R,:DETAILS_R,:ETAT, :USER_ID)";
+        $sql="INSERT INTO reclamation (NOW_R,OBJET_R,DETAILS_R,ETAT,USER_ID) VALUES ( :NOW_R,:OBJET_R,:DETAILS_R,:ETAT, :USER_ID)";
         $db = config::getConnexion();
         try{
             $req=$db->prepare($sql);
@@ -22,11 +22,13 @@ class ReclamationC {
             $DETAILS_R=$Reclamation->getDETAILS_R();
             $ETAT=$Reclamation->getETAT();
             $USER_ID=$Reclamation->getUSER_ID();
+            $NOW_R=$Reclamation->getNOW_R();
 
             $req->bindValue(':OBJET_R',$OBJET_R);
             $req->bindValue(':DETAILS_R',$DETAILS_R);
             $req->bindValue(':ETAT',$ETAT);
             $req->bindValue('USER_ID',$USER_ID);
+            $req->bindValue('NOW_R',$NOW_R);
             $req->execute();
 
         }
@@ -39,7 +41,7 @@ class ReclamationC {
     function afficherReclamations()
     {
         //$sql="SElECT * From rdv s inner join utilisateur u on s.USER_ID= u.USER_ID";
-        $sql="SElECT d.ID_R,d.OBJET_R,d.DETAILS_R,d.ETAT,u.NOM_U,u.PRENOM_U FROM reclamation d INNER JOIN utilisateur u ON u.USER_ID=d.USER_ID";
+        $sql="SElECT d.ID_R,d.OBJET_R,d.DETAILS_R,d.ETAT,d.NOW_R,u.NOM_U,u.PRENOM_U FROM reclamation d INNER JOIN utilisateur u ON u.USER_ID=d.USER_ID";
         $db = config::getConnexion();
         try{
             $liste=$db->query($sql);
@@ -98,22 +100,103 @@ class ReclamationC {
     }
 
 
-}
 
 function modifierReclamation($Reclamation,$ID_R)
 {
-    $sql = "UPDATE `reclamation` SET `OBJET_R`= OBJET_R,`DETAILS_R`= DETAILS_R  WHERE  `reclamation`.`ID_R` = ID_R";
+    $sql = "UPDATE `reclamation` SET `OBJET_R`= OBJET_R,`DETAILS_R`= DETAILS_R, `NOW_R`=NOW_R  WHERE  `reclamation`.`ID_R` = ID_R";
     $db = config::getConnexion();
     $req = $db->prepare($sql);
     $ID_R=$Reclamation->getID_R();
     $DETAILS_R = $Reclamation->getDETAILS_R();
     $OBJET_R = $Reclamation->getOBJET_R();
+    $NOW_R = $Reclamation->getNOW_R();
 
     $req->bindValue(":ID_R",$ID_R);
     $req->bindValue(':DETAILS_R', $DETAILS_R);
     $req->bindValue(':OBJET_R', $OBJET_R);
+    $req->bindValue(':NOW_R', $NOW_R);
 
     $req->execute();
+
+}
+
+    function RechercheReclamationC($haja){
+
+        $sql="SELECT d.ID_R,d.OBJET_R,d.DETAILS_R,d.ETAT,d.NOW_R,u.NOM_U,u.PRENOM_U FROM reclamation d INNER JOIN utilisateur u ON u.USER_ID=d.USER_ID WHERE u.NOM_U LIKE '%$haja%' ";
+
+
+        $db = config::getConnexion();
+        try{
+            $liste=$db->query($sql);
+            return $liste;
+
+        }
+        catch (Exception $e){
+            die('Erreur: '.$e->getMessage());
+        }
+    }
+
+    function NBRLivraisonNonRecu(){
+
+        $sql="SELECT COUNT(ID_R) nbr FROM reclamation WHERE OBJET_R='Livraison non reçu' ";
+
+
+        $db = config::getConnexion();
+        try{
+            $liste=$db->query($sql);
+            return $liste;
+
+        }
+        catch (Exception $e){
+            die('Erreur: '.$e->getMessage());
+        }
+    }
+
+    function NBRLivraison_non_coforme(){
+
+        $sql="SELECT COUNT(ID_R) nbr FROM reclamation WHERE OBJET_R='Livraison non coforme' ";
+
+
+        $db = config::getConnexion();
+        try{
+            $liste=$db->query($sql);
+            return $liste;
+
+        }
+        catch (Exception $e){
+            die('Erreur: '.$e->getMessage());
+        }
+    }
+    function NBRRetM_sousGrantie(){
+
+        $sql="SELECT COUNT(ID_R) nbr FROM reclamation WHERE OBJET_R='Réparation et maintenance sous garantie' ";
+
+
+        $db = config::getConnexion();
+        try{
+            $liste=$db->query($sql);
+            return $liste;
+
+        }
+        catch (Exception $e){
+            die('Erreur: '.$e->getMessage());
+        }
+    }
+    function NBRAutre(){
+
+        $sql="SELECT COUNT(ID_R) nbr FROM reclamation WHERE OBJET_R='Autre..' ";
+
+
+        $db = config::getConnexion();
+        try{
+            $liste=$db->query($sql);
+            return $liste;
+
+        }
+        catch (Exception $e){
+            die('Erreur: '.$e->getMessage());
+        }
+    }
 
 }
 ?>

@@ -8,17 +8,15 @@ if (isset($_POST['lname']) and isset($_POST['num']) and isset($_POST['subject'])
 $demande1=new Demande($date,$_POST['lname'],$_POST['num'],$_POST['subject'],$_POST['message'],"en attente",$a);
 $demande1C=new DemandeC();
 $demande1C->ajouterDemande($demande1);
-?>
-    <script>
-        alert("demande ajouté");
 
-    </script>
-<?php
- header('Location:demande.php');
 
+ //header('Location:demande.php');
+    echo "<script type=\"text/javascript\">window.alert('demande ajoutée avec succes.');
+                window.location.href='demande.php'</script>";
 
 }else{
-	echo "vérifier les champs";
+    echo "<script type=\"text/javascript\">window.alert('champs invalides.');
+                window.location.href='demande.php'</script>";
 }
 //*/
 

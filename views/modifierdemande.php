@@ -1,19 +1,28 @@
 <?php
 session_start();
 include '../core/DemandeC.php';
+$dd= date_create()->format('Y-m-d');
 $db=config::getConnexion();
 $id=$_GET['mod'];
 $req="SELECT * FROM demande WHERE ID_D='$id'";
 $list=$db->query($req);
 foreach ($list as $row)
 {
-    $id=$row['ID_D'];
-    $nom=$row['NOM_D'];
-    $date=$row['DATE_DEMANDE'];
-    $num=$row['NUM_D'];
-    $objet=$row['OBJET_D'];
-    $details=$row['DETAILS_D'];
-    $etat=$row['ETAT_D'];
+    //echo $row['DATE_DEMANDE'];
+if ($dd <= $row['DATE_DEMANDE']) {
+
+        $id = $row['ID_D'];
+        $nom = $row['NOM_D'];
+        $date = $row['DATE_DEMANDE'];
+        $num = $row['NUM_D'];
+        $objet = $row['OBJET_D'];
+        $details = $row['DETAILS_D'];
+        $etat = $row['ETAT_D'];
+
+}
+else
+    echo "<script type=\"text/javascript\">window.alert('Vous ne pouvez plus modifier.');
+                window.location.href='demande.php'</script>";
 }
 ?>
 <!DOCTYPE HTML>

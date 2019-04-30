@@ -197,12 +197,17 @@ $list=$rdvc->afficherRDV($_SESSION['id']);
   </div>
 
    <div id="fh5co-started">
-            <div class="container">
+       <div class="row animate-box" style="  margin: auto; padding: 10px;" >
+           <div class="row" >
+               <div class="span12">
+                   <div class="well well-small" style="margin-left:10% ; width:1200px">
+                       <h1>Liste de Vos Rendez-Vous<small class="pull-right"></small></h1>
+                       <hr class="soften"/>
+                       <h6> Notez Bien que la modification et la suppression seront impossible apres 24h <small class="pull-right"></small></h6>
 
-                <div class="row animate-box">
-                    <div class="col-md-8 col-md-offset-2">
-                        <table class="table-bordered">
+                        <table class="table table-striped">
                             <thead>
+                            <th>Date depot rdv</th>
                             <th>Date du rdv</th>
                             <th>Objet du rdv</th>
                             <th>Etat du rdv</th>
@@ -214,7 +219,8 @@ $list=$rdvc->afficherRDV($_SESSION['id']);
                             foreach($list as $row)
                             {
 
-                                echo "<tr><td>".$row['DATE_RDV'];"</td>";
+                                echo "<tr><td>".$row['NOW_RDV'];"</td>";
+                                echo "<td>".$row['DATE_RDV'];"</td>";
                                 echo "<td>".$row['OBJET_RDV'];"</td>";
                                 echo "<td>".$row['ETAT_RDV'];"</td></tr>";
                                 ?>
@@ -228,8 +234,12 @@ $list=$rdvc->afficherRDV($_SESSION['id']);
                                         </td>
                                     </div>
                                 </div>
-                                <td> <button name="modifier" class="btn-outline" value="Modifier">
-                                        <a href="modifierRDV.php?mod=<?php echo $row['ID_RDV'];?>">M</a>Modifier</button>
+                                <td>
+                                    <form method="GET" action="modifierRDV.php" >
+                                        <input type="submit" name="modifier" class="btn-outline" value="Modifier"/>
+
+                                        <input type="hidden" name="mod" value="<?php echo $row['ID_RDV'];?>"/>
+                                    </form>
                                 </td>
                                 <?php
                             }
@@ -237,6 +247,7 @@ $list=$rdvc->afficherRDV($_SESSION['id']);
 
                         </table>
                     </div>
+
                 </div>
             </div>
    </div>

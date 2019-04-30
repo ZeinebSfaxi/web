@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6eb3551c-2bb0-4d7b-b86c-f9e4a30a20c8" name="Default Changelist" comment="" />
+    <list default="true" id="6eb3551c-2bb0-4d7b-b86c-f9e4a30a20c8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/DemandeC.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/DemandeC.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/RdvC.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/RdvC.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/ReclamationC.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/ReclamationC.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entities/Rdv.php" beforeDir="false" afterPath="$PROJECT_DIR$/entities/Rdv.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entities/Reclamation.php" beforeDir="false" afterPath="$PROJECT_DIR$/entities/Reclamation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/RDV.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/RDV.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/ajouterDemande.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/ajouterDemande.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/ajouterRDV.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/ajouterRDV.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/ajouterReclamation.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/ajouterReclamation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/backOffice/nalika/RDVBACK.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/backOffice/nalika/RDVBACK.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/backOffice/nalika/demandeBACK.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/backOffice/nalika/demandeBACK.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/backOffice/nalika/reclamationBACK.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/backOffice/nalika/reclamationBACK.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/demande.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/demande.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/modif.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/modif.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/modifierRDV.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/modifierRDV.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/modifierReclamation.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/modifierReclamation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/modifierdemande.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/modifierdemande.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/supprimerDemande.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/supprimerDemande.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/supprimerRDV.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/supprimerRDV.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/supprimerReclamation.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/supprimerReclamation.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,19 +48,65 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/backOffice/nalika/reclamationBACK.php">
+        <entry file="file://$PROJECT_DIR$/core/DemandeC.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="912" column="78" selection-start-line="912" selection-start-column="78" selection-end-line="912" selection-end-column="78" />
+            <state relative-caret-position="408">
+              <caret line="48" column="200" selection-start-line="48" selection-start-column="200" selection-end-line="48" selection-end-column="200" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/ajouterDemande.php">
+        <entry file="file://$PROJECT_DIR$/core/RdvC.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+            <state relative-caret-position="102">
+              <caret line="6" column="64" selection-start-line="6" selection-start-column="64" selection-end-line="6" selection-end-column="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core/ReclamationC.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="76" selection-start-line="6" selection-start-column="76" selection-end-line="6" selection-end-column="76" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/backOffice/nalika/demandeBACK.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="199" column="95" selection-start-line="199" selection-start-column="95" selection-end-line="199" selection-end-column="95" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#12017#12269#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/backOffice/nalika/reclamationBACK.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-367">
+              <caret line="238" column="88" selection-start-line="238" selection-start-column="88" selection-end-line="238" selection-end-column="88" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -45,26 +114,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/contact.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="198" column="14" lean-forward="true" selection-start-line="198" selection-start-column="14" selection-end-line="198" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/supprimerRDV.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="9" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/RDV.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="203" column="52" selection-start-line="203" selection-start-column="52" selection-end-line="203" selection-end-column="52" />
+            <state relative-caret-position="238">
+              <caret line="209" column="141" selection-start-line="209" selection-start-column="141" selection-end-line="209" selection-end-column="141" />
+              <folding>
+                <element signature="e#13221#13227#0#HTML" expanded="true" />
+                <element signature="e#13471#13476#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -72,17 +127,37 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/demande.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="236" column="107" selection-start-line="236" selection-start-column="107" selection-end-line="236" selection-end-column="107" />
+            <state relative-caret-position="297">
+              <caret line="228" column="145" selection-start-line="228" selection-start-column="145" selection-end-line="228" selection-end-column="145" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/views/backOffice/nalika/demandeBACK.php">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/RDV.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="95" column="9" lean-forward="true" selection-start-line="95" selection-start-column="9" selection-end-line="95" selection-end-column="9" />
+            <state relative-caret-position="331">
+              <caret line="205" column="144" selection-start-line="205" selection-start-column="22" selection-end-line="205" selection-end-column="144" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/backOffice/nalika/RDVBACK.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="398">
+              <caret line="242" column="22" lean-forward="true" selection-start-line="242" selection-start-column="22" selection-end-line="242" selection-end-column="22" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#14339#14580#0#PHP" expanded="true" />
+                <element signature="n#style#0;n#tr#1;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#tr#2;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -91,14 +166,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>envoyer</find>
-      <find>nos</find>
-      <find>$nom</find>
-      <find>form</find>
-      <find>abonn</find>
-      <find>demandeBACK.</find>
-      <find>nom</find>
-      <find>for</find>
       <find>abonne</find>
       <find>php</find>
       <find>hidde</find>
@@ -116,7 +183,23 @@
       <find>Nalika</find>
       <find>contact.html</find>
       <find>mod</find>
+      <find>user</find>
+      <find>trai</find>
+      <find>suppri</find>
+      <find>Misc</find>
+      <find>liste</find>
+      <find>left-sidebar-pro</find>
+      <find>liste des</find>
+      <find>form</find>
+      <find>mem</find>
+      <find>li</find>
+      <find>liste</find>
+      <find>margin-left</find>
+      <find>search</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -134,49 +217,49 @@
         <option value="$PROJECT_DIR$/core/RDVC.php" />
         <option value="$PROJECT_DIR$/views/demande.html" />
         <option value="$PROJECT_DIR$/views/demandeBACK.php" />
-        <option value="$PROJECT_DIR$/views/supprimerDemande.php" />
         <option value="$PROJECT_DIR$/backOffice/nalika/deletedemande.php" />
         <option value="$PROJECT_DIR$/backOffice/nalika/demandeBACK.php" />
         <option value="$PROJECT_DIR$/views/backOffice/nalika/RDVBACK.html" />
         <option value="$PROJECT_DIR$/views/backOffice/nalika/reclamationBACK.html" />
         <option value="$PROJECT_DIR$/views/backOffice/nalika/deletedemande.php" />
         <option value="$PROJECT_DIR$/views/backOffice/nalika/deleteRDV.php" />
-        <option value="$PROJECT_DIR$/views/supprimerRDV.php" />
         <option value="$PROJECT_DIR$/views/modifRDV.php" />
-        <option value="$PROJECT_DIR$/entities/Demande.php" />
-        <option value="$PROJECT_DIR$/entities/Rdv.php" />
-        <option value="$PROJECT_DIR$/entities/Reclamation.php" />
         <option value="$PROJECT_DIR$/views/backOffice/nalika/deletereclamation.php" />
-        <option value="$PROJECT_DIR$/views/supprimerReclamation.php" />
         <option value="$PROJECT_DIR$/views/modifRec.php" />
-        <option value="$PROJECT_DIR$/views/modif.php" />
         <option value="$PROJECT_DIR$/views/contact.html" />
-        <option value="$PROJECT_DIR$/views/modifierdemande.php" />
-        <option value="$PROJECT_DIR$/views/modifierRDV.php" />
-        <option value="$PROJECT_DIR$/views/modifierReclamation.php" />
         <option value="$PROJECT_DIR$/views/backOffice/nalika/traiterD.php" />
         <option value="$PROJECT_DIR$/views/backOffice/nalika/traiterR.php" />
-        <option value="$PROJECT_DIR$/core/DemandeC.php" />
-        <option value="$PROJECT_DIR$/core/ReclamationC.php" />
-        <option value="$PROJECT_DIR$/core/RdvC.php" />
-        <option value="$PROJECT_DIR$/views/ajouterDemande.php" />
-        <option value="$PROJECT_DIR$/views/ajouterRDV.php" />
         <option value="$PROJECT_DIR$/views/llog.php" />
-        <option value="$PROJECT_DIR$/views/demande.php" />
-        <option value="$PROJECT_DIR$/views/contact.php" />
-        <option value="$PROJECT_DIR$/views/RDV.php" />
-        <option value="$PROJECT_DIR$/views/ajouterReclamation.php" />
         <option value="$PROJECT_DIR$/views/backOffice/nalika/refuserRDV.php" />
         <option value="$PROJECT_DIR$/views/backOffice/nalika/accepterRDV.php" />
         <option value="$PROJECT_DIR$/views/login.php" />
-        <option value="$PROJECT_DIR$/views/backOffice/nalika/demandeBACK.php" />
+        <option value="$PROJECT_DIR$/entities/Demande.php" />
+        <option value="$PROJECT_DIR$/entities/Reclamation.php" />
+        <option value="$PROJECT_DIR$/views/modif.php" />
+        <option value="$PROJECT_DIR$/views/modifierReclamation.php" />
+        <option value="$PROJECT_DIR$/views/ajouterRDV.php" />
+        <option value="$PROJECT_DIR$/entities/Rdv.php" />
+        <option value="$PROJECT_DIR$/views/supprimerDemande.php" />
+        <option value="$PROJECT_DIR$/views/supprimerRDV.php" />
+        <option value="$PROJECT_DIR$/views/supprimerReclamation.php" />
+        <option value="$PROJECT_DIR$/views/ajouterReclamation.php" />
+        <option value="$PROJECT_DIR$/views/modifierRDV.php" />
+        <option value="$PROJECT_DIR$/views/modifierdemande.php" />
+        <option value="$PROJECT_DIR$/views/ajouterDemande.php" />
         <option value="$PROJECT_DIR$/views/backOffice/nalika/RDVBACK.php" />
+        <option value="$PROJECT_DIR$/views/backOffice/nalika/demandeBACK.php" />
         <option value="$PROJECT_DIR$/views/backOffice/nalika/reclamationBACK.php" />
+        <option value="$PROJECT_DIR$/views/RDV.php" />
+        <option value="$PROJECT_DIR$/views/demande.php" />
+        <option value="$PROJECT_DIR$/views/contact.php" />
+        <option value="$PROJECT_DIR$/core/DemandeC.php" />
+        <option value="$PROJECT_DIR$/core/RdvC.php" />
+        <option value="$PROJECT_DIR$/core/ReclamationC.php" />
       </list>
     </option>
   </component>
   <component name="PhpDebugGeneral" listening_started="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
@@ -187,6 +270,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -213,6 +297,12 @@
               <item name="projet - Copie" type="b2602c69:ProjectViewProjectNode" />
               <item name="projet - Copie" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name=".sass-cache" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projet - Copie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet - Copie" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="backOffice" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -222,16 +312,21 @@
               <item name="backOffice" type="462c0819:PsiDirectoryNode" />
               <item name="nalika" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="projet - Copie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projet - Copie" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../projet" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/projet integra/ecommerceTest1/integration1" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -277,16 +372,34 @@
       <workItem from="1553979209065" duration="8273000" />
       <workItem from="1554064475795" duration="3905000" />
       <workItem from="1554152762163" duration="2645000" />
+      <workItem from="1554159501143" duration="238000" />
+      <workItem from="1554194572804" duration="221000" />
+      <workItem from="1554211352999" duration="2536000" />
+      <workItem from="1554390549414" duration="184000" />
+      <workItem from="1555073638301" duration="5706000" />
+      <workItem from="1555413297801" duration="122000" />
+      <workItem from="1555415947108" duration="8610000" />
+      <workItem from="1555494564492" duration="2410000" />
+      <workItem from="1555528923475" duration="9527000" />
+      <workItem from="1555541249453" duration="607000" />
+      <workItem from="1555576237020" duration="4965000" />
+      <workItem from="1555585512451" duration="427000" />
+      <workItem from="1555945094579" duration="840000" />
+      <workItem from="1555954890527" duration="765000" />
+      <workItem from="1556458547088" duration="7438000" />
+      <workItem from="1556466709415" duration="1308000" />
+      <workItem from="1556613926214" duration="8769000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107716000" />
+    <option name="totallyTimeSpent" value="162389000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28290468" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21558245" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -311,20 +424,9 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Desktop/webkarate/projet/core/produitC.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backOffice/nalika/deletedemande.php" />
-    <entry file="file://$PROJECT_DIR$/backOffice/nalika/demandeTest.php" />
-    <entry file="file://$PROJECT_DIR$/backOffice/nalika/demandeBACK.php" />
     <entry file="file://$PROJECT_DIR$/views/backOffice/nalika/RDVBACK.html" />
     <entry file="file://$PROJECT_DIR$/views/backOffice/nalika/reclamationBACK.html" />
     <entry file="file://$USER_HOME$/Desktop/webkarate/projet/views/front/modifierClient.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/backOffice/nalika/demandeTest.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/views/backOffice/nalika/index.html">
@@ -333,13 +435,6 @@
     <entry file="file://$PROJECT_DIR$/views/README.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/supprimerDemande.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/date/date.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2910">
@@ -347,24 +442,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/supprimerReclamation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/modifRDV.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/modifierRDV.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="112" column="52" selection-start-line="112" selection-start-column="52" selection-end-line="112" selection-end-column="52" />
         </state>
       </provider>
     </entry>
@@ -378,24 +459,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/backOffice/nalika/deletedemande.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="18" />
-          <folding>
-            <element signature="e#1#6#0#PHP" />
-            <element signature="e#7#154#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/RdvC.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="71" column="39" selection-start-line="71" selection-start-column="39" selection-end-line="71" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -414,59 +477,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/ajouterRDV.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/DemandeC.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="48" column="173" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="173" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/entities/Demande.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-522">
-          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/ReclamationC.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="41" column="36" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/entities/Rdv.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/entities/Reclamation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="135" column="57" selection-start-line="135" selection-start-column="57" selection-end-line="135" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/llog.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="71" selection-start-line="17" selection-start-column="71" selection-end-line="17" selection-end-column="71" />
         </state>
       </provider>
     </entry>
@@ -477,76 +491,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/backOffice/nalika/accepterRDV.php">
+    <entry file="file://$PROJECT_DIR$/views/backOffice/nalika/traiterD.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/ajouterReclamation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-136">
-          <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="48" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/backOffice/nalika/RDVBACK.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12642">
-          <caret line="79" column="65" selection-start-line="79" selection-start-column="65" selection-end-line="79" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/modifierReclamation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3757">
-          <caret line="221" column="79" selection-start-line="221" selection-start-column="76" selection-end-line="221" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2703">
-          <caret line="159" column="37" selection-start-line="159" selection-start-column="37" selection-end-line="159" selection-end-column="37" />
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/config.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/backOffice/nalika/deleteRDV.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="8" selection-end-column="2" />
+        <state relative-caret-position="119">
+          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/backOffice/nalika/deletereclamation.php">
+    <entry file="file://$USER_HOME$/Desktop/nalika-master/nalika/analytics.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
-        </state>
+        <state relative-caret-position="-16767" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/backOffice/nalika/traiterD.php">
+    <entry file="file://$PROJECT_DIR$/views/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="9" />
-        </state>
+        <state relative-caret-position="-1173" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/modifierdemande.php">
+    <entry file="file://$USER_HOME$/Desktop/nalika-master/nalika/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        <state relative-caret-position="595">
+          <caret line="1043" column="33" lean-forward="true" selection-start-line="1043" selection-start-column="33" selection-end-line="1043" selection-end-column="33" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/modif.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="306">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
@@ -557,52 +539,236 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/backOffice/nalika/reclamationBACK.php">
+    <entry file="file://$PROJECT_DIR$/views/modifierReclamation.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="912" column="78" selection-start-line="912" selection-start-column="78" selection-end-line="912" selection-end-column="78" />
+        <state relative-caret-position="187">
+          <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/supprimerReclamation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="45" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/supprimerRDV.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/modifierRDV.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="41" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/supprimerDemande.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="94" selection-start-line="19" selection-start-column="94" selection-end-line="19" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/modifierdemande.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/entities/Rdv.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/entities/Reclamation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/entities/Demande.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/ajouterDemande.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+          <caret line="16" column="6" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/contact.php">
+    <entry file="file://$PROJECT_DIR$/views/ajouterRDV.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="198" column="14" lean-forward="true" selection-start-line="198" selection-start-column="14" selection-end-line="198" selection-end-column="14" />
+        <state relative-caret-position="68">
+          <caret line="4" column="97" selection-start-line="4" selection-start-column="97" selection-end-line="4" selection-end-column="97" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/supprimerRDV.php">
+    <entry file="file://$PROJECT_DIR$/views/backOffice/nalika/analytics.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/ajouterReclamation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/backOffice/nalika/accepterRDV.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/backOffice/nalika/demandeTest.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/backOffice/nalika/deletereclamation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/backOffice/nalika/deleteRDV.php">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret selection-end-line="9" selection-end-column="2" />
+          <caret selection-end-line="8" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/RDV.php">
+    <entry file="file://$PROJECT_DIR$/views/backOffice/nalika/deletedemande.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="203" column="52" selection-start-line="203" selection-start-column="52" selection-end-line="203" selection-end-column="52" />
+        <state relative-caret-position="51">
+          <caret line="9" selection-start-line="9" selection-end-line="18" />
+          <folding>
+            <element signature="e#1#6#0#PHP" />
+            <element signature="e#7#154#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/demande.php">
+    <entry file="file://$PROJECT_DIR$/views/contact.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="236" column="107" selection-start-line="236" selection-start-column="107" selection-end-line="236" selection-end-column="107" />
+        <state relative-caret-position="756">
+          <caret line="159" column="37" selection-start-line="159" selection-start-column="37" selection-end-line="159" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/llog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="71" selection-start-line="17" selection-start-column="71" selection-end-line="17" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/backOffice/nalika/RDVBACK.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="242" column="22" lean-forward="true" selection-start-line="242" selection-start-column="22" selection-end-line="242" selection-end-column="22" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#14339#14580#0#PHP" expanded="true" />
+            <element signature="n#style#0;n#tr#1;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#2;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/backOffice/nalika/demandeBACK.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="95" column="9" lean-forward="true" selection-start-line="95" selection-start-column="9" selection-end-line="95" selection-end-column="9" />
+        <state relative-caret-position="17">
+          <caret line="199" column="95" selection-start-line="199" selection-start-column="95" selection-end-line="199" selection-end-column="95" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#12017#12269#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/backOffice/nalika/reclamationBACK.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-367">
+          <caret line="238" column="88" selection-start-line="238" selection-start-column="88" selection-end-line="238" selection-end-column="88" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/RDV.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="205" column="144" selection-start-line="205" selection-start-column="22" selection-end-line="205" selection-end-column="144" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/demande.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="228" column="145" selection-start-line="228" selection-start-column="145" selection-end-line="228" selection-end-column="145" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/contact.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="209" column="141" selection-start-line="209" selection-start-column="141" selection-end-line="209" selection-end-column="141" />
+          <folding>
+            <element signature="e#13221#13227#0#HTML" expanded="true" />
+            <element signature="e#13471#13476#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/DemandeC.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="48" column="200" selection-start-line="48" selection-start-column="200" selection-end-line="48" selection-end-column="200" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/RdvC.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="64" selection-start-line="6" selection-start-column="64" selection-end-line="6" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/ReclamationC.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="76" selection-start-line="6" selection-start-column="76" selection-end-line="6" selection-end-column="76" />
         </state>
       </provider>
     </entry>

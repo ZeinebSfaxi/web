@@ -1,16 +1,22 @@
 <?php
 session_start();
 include '../core/RdvC.php';
+$dd= date_create()->format('Y-m-d');
 $db=config::getConnexion();
 $id=$_GET['mod'];
 $req="SELECT * FROM rdv WHERE ID_RDV='$id'";
 $list=$db->query($req);
 foreach ($list as $row)
 {
-    $id=$row['ID_RDV'];
-    $date=$row['DATE_RDV'];
-    $objet=$row['OBJET_RDV'];
-    $etat=$row['ETAT_RDV'];
+if ($dd <= $row['NOW_RDV']) {
+    $id = $row['ID_RDV'];
+    $date = $row['DATE_RDV'];
+    $objet = $row['OBJET_RDV'];
+    $etat = $row['ETAT_RDV'];
+}
+else
+    echo "<script type=\"text/javascript\">window.alert('Vous ne pouvez plus modifier.');
+                window.location.href='RDV.php'</script>";
 }
 ?>
 <!DOCTYPE HTML>

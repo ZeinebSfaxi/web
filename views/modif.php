@@ -1,5 +1,6 @@
 <?php
 include "../core/config.php";
+
 if(isset($_POST['lname']) && isset($_POST['num']) && isset($_POST['details']) && isset($_POST['user'])&&isset($_POST['subject']))
 {
     $e=$_POST['user'];
@@ -10,7 +11,7 @@ if(isset($_POST['lname']) && isset($_POST['num']) && isset($_POST['details']) &&
     $db=config::getConnexion();
     $req="UPDATE `demande` SET `NOM_D` = ?, `NUM_D` = ?, `OBJET_D`= ?,`DETAILS_D` = ? WHERE `demande`.`ID_D` = ?";
     $sql=$db->prepare($req);
-    $sql->execute([$a,$b,$c,$d,$e]);
+    $sql->execute([$a,$b,$d,$c,$e]);
     header('Location: demande.php');
 }
 ?>

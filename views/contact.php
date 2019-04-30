@@ -200,12 +200,17 @@ $list=$reclamationc->afficherReclamation($_SESSION['id']);
     </div>
 
     <div id="fh5co-started">
-        <div class="container">
+        <div class="row animate-box" style="  margin: auto; padding: 10px;" >
+        <div class="row">
+            <div class="span12">
 
-            <div class="row animate-box">
-                <div class="col-md-8 col-md-offset-2">
-                    <table class="table-bordered" >
+                <div class="well well-small" style="margin-left:10% ; width:1200px">
+                    <h1>Liste de Vos Reclamations<small class="pull-right"></small></h1>
+                    <hr class="soften"/>
+                    <h6> Notez Bien que la modification et la suppression seront impossible apres 24h <small class="pull-right"></small></h6>
+                    <table class="table table-striped" >
                         <thead>
+                        <th>Date de depot</th>
                         <th>Sujet reclamation</th>
                         <th>Details reclamation</th>
                         <th>Etat reclamation</th>
@@ -217,7 +222,8 @@ $list=$reclamationc->afficherReclamation($_SESSION['id']);
                         foreach($list as $row)
                         {
 
-                            echo "<tr><td>".$row['OBJET_R'];"</td>";
+                            echo "<tr><td>".$row['NOW_R'];"</td>";
+                            echo "<td>".$row['OBJET_R'];"</td>";
                             echo "<td>".$row['DETAILS_R'];"</td>";
                             echo "<td>".$row['ETAT'];"</td></tr>";
                             ?>
@@ -233,8 +239,11 @@ $list=$reclamationc->afficherReclamation($_SESSION['id']);
                             </div>
 
                             <td>
-                                <button name="modifier" class="btn-outline" value="Modifier">
-                                    <a href="modifierReclamation.php?mod=<?php echo $row['ID_R'];?>">M</a>Modifier</button>
+                            <form method="GET" action="modifierReclamation.php" >
+                                <input type="submit" name="modifier" class="btn-outline" value="Modifier"/>
+
+                                <input type="hidden" name="mod" value="<?php echo $row['ID_R'];?>"/>
+                            </form>
                             </td>
                             <?php
                         }
